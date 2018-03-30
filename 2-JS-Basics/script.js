@@ -117,33 +117,59 @@
 //     console.log('John does something else');
 // }
 
-johnHeight = 6;
+// johnHeight = 6;
 
-johnAge = 1;
+// johnAge = 1;
 
-markHeight = 2;
+// markHeight = 2;
 
-markAge = 10;
+// markAge = 10;
 
-tonyHeight = 10;
+// tonyHeight = 10;
 
-tonyAge = 10;
+// tonyAge = 10;
 
-scoreOne = johnHeight + (johnAge * 5)
+// scoreOne = johnHeight + (johnAge * 5)
 
-scoreTwo = markHeight + (markAge * 5)
+// scoreTwo = markHeight + (markAge * 5)
 
-scoreThree = tonyHeight + (tonyAge * 5)
+// scoreThree = tonyHeight + (tonyAge * 5)
 
-if (scoreOne < scoreTwo && scoreTwo > scoreThree) {
-  console.log('Mark wins with a score of ' + scoreTwo);
-} else if (scoreOne > scoreTwo && scoreOne > scoreThree) {
-  console.log('John wins with a score of ' + scoreOne);
-} else if (scoreThree > scoreOne && scoreThree > scoreTwo) {
-  console.log('Tony wins with a score of ' + scoreThree);
+// if (scoreOne < scoreTwo && scoreTwo > scoreThree) {
+//   console.log('Mark wins with a score of ' + scoreTwo);
+// } else if (scoreOne > scoreTwo && scoreOne > scoreThree) {
+//   console.log('John wins with a score of ' + scoreOne);
+// } else if (scoreThree > scoreOne && scoreThree > scoreTwo) {
+//   console.log('Tony wins with a score of ' + scoreThree);
+// }
+// else {
+//   console.log('It is a tie, all scored ' + scoreOne);
+// }
+
+// Lecture: Functions
+
+function calculateAge(yearOfBirth) {
+  var age = 2018 - yearOfBirth;
+  return age;
 }
-else {
-  console.log('It is a tie, all scored ' + scoreOne);
+
+var ageJoe = calculateAge(1993);
+var ageMike = calculateAge(1969);
+var ageMary = calculateAge(1948);
+// console.log(ageMike);
+
+function yearsUntilRetirement(name, year) {
+  var age = calculateAge(year);
+  var retirement = 65 - age;
+
+  if (retirement >= 0) {
+    console.log(name + ' retires in ' + retirement + ' years.');
+  } else {
+    console.log(name + ' has already retired.');
+  }
 }
 
+yearsUntilRetirement('Joe', 1993);
+yearsUntilRetirement('Mike', 1969);
+yearsUntilRetirement('Mary', 1948);
 
