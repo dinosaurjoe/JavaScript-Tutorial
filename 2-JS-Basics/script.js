@@ -63,28 +63,87 @@
 
 //Lecture: if/else statements
 
-var name = 'John';
-var age = 26;
-var isMarried = 'yes';
+// var name = 'John';
+// var age = 26;
+// var isMarried = 'yes';
 
-if (isMarried === 'yes') {
-  console.log(name + ' is married!');
-} else {
-  console.log(name + ' is not married.');
-}
-
-isMarried = false;
-// if(isMarried) {
-//   console.log('YES!');
+// if (isMarried === 'yes') {
+//   console.log(name + ' is married!');
 // } else {
-//   console.log('NO!');
+//   console.log(name + ' is not married.');
 // }
 
-if(isMarried) {
-  console.log('YES!');
+// isMarried = false;
+// // if(isMarried) {
+// //   console.log('YES!');
+// // } else {
+// //   console.log('NO!');
+// // }
+
+// if(isMarried) {
+//   console.log('YES!');
+// }
+
+// if (23 === "23") {
+//   console.log('Something to print...');
+// }
+
+//Lecture: boolean logic and switch
+
+// var age = 25;
+
+// if (age < 20) {
+//   console.log('John is a teenager');
+// } else if (age >= 20 && age < 30) {
+//   console.log('John is a young man');
+// } else {
+//   console.log('John is a man');
+// }
+
+// var job = 'teacher';
+
+// job = prompt('What does John do?')
+// switch (job) {
+//   case 'teacher':
+//     console.log('John teaches kids');
+//     break;
+//   case 'driver':
+//     console.log('John drives a cab');
+//     break;
+//   case 'cop':
+//     console.log('John helps fight crime');
+//     break;
+//   default:
+//     console.log('John does something else');
+// }
+
+johnHeight = 6;
+
+johnAge = 1;
+
+markHeight = 2;
+
+markAge = 10;
+
+tonyHeight = 10;
+
+tonyAge = 10;
+
+scoreOne = johnHeight + (johnAge * 5)
+
+scoreTwo = markHeight + (markAge * 5)
+
+scoreThree = tonyHeight + (tonyAge * 5)
+
+if (scoreOne < scoreTwo && scoreTwo > scoreThree) {
+  console.log('Mark wins with a score of ' + scoreTwo);
+} else if (scoreOne > scoreTwo && scoreOne > scoreThree) {
+  console.log('John wins with a score of ' + scoreOne);
+} else if (scoreThree > scoreOne && scoreThree > scoreTwo) {
+  console.log('Tony wins with a score of ' + scoreThree);
+}
+else {
+  console.log('It is a tie, all scored ' + scoreOne);
 }
 
-if (23 === "23") {
-  console.log('Something to print...');
-}
 
