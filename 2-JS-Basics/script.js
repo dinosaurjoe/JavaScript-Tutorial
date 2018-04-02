@@ -272,30 +272,98 @@
 // console.log(john);
 
 // v2.0
-var john = {
-  name:'John',
-  lastName: 'Smith',
-  yearOfBirth: 1990,
-  job: 'teacher',
-  isMarried: false,
-  family: ['Jane', 'Mark', 'Bob'],
-  calculateAge: function() {
-      //return 2018 - this.yearOfBirth;
-      this.Age = 2016 - this.yearOfBirth;
-  }
-};
+// var john = {
+//   name:'John',
+//   lastName: 'Smith',
+//   yearOfBirth: 1990,
+//   job: 'teacher',
+//   isMarried: false,
+//   family: ['Jane', 'Mark', 'Bob'],
+//   calculateAge: function() {
+//       //return 2018 - this.yearOfBirth;
+//       this.Age = 2016 - this.yearOfBirth;
+//   }
+// };
 
-john.calculateAge();
-console.log(john);
+// john.calculateAge();
+// console.log(john);
 
 
-var mike = {
-  yearOfBirth: 1950,
-  calculateAge: function() {
-      //return 2018 - this.yearOfBirth;
-      this.Age = 2016 - this.yearOfBirth;
-  }
-};
+// var mike = {
+//   yearOfBirth: 1950,
+//   calculateAge: function() {
+//       //return 2018 - this.yearOfBirth;
+//       this.Age = 2016 - this.yearOfBirth;
+//   }
+// };
 
-mike.calculateAge();
-console.log(mike);
+// mike.calculateAge();
+// console.log(mike);
+
+//Lecture: Loops and Iterations
+
+// for (var i = 0; i < 10; i++){
+//   console.log(i);
+// }
+
+// var names = ['John', 'Jane', 'Mary', 'Mark', 'Bob'];
+
+
+// //for loops
+
+// // for (var i = 0; i < names.length; i++) {
+// //   console.log(names[i]);
+// // }
+
+// // for (var i = names.length - 1; i >= 0; i--) {
+// //   console.log(names[i]);
+// // }
+
+
+// //while loops
+// var i = 0;
+// while(i < names.length) {
+//   console.log(names[i]);
+//   i++;
+// }
+
+// for (var i = 1; i <= 5; i++) {
+//   console.log(i);
+
+//   if (i === 3) {
+//     break;
+//   }
+// }
+
+// for (var i = 1; i <= 5; i++) {
+//   if (i === 3) {
+//     continue;
+//   }
+
+//   console.log(i);
+// }
+function printFullAge(years) {
+    var ages = [];
+    var fullAges = [];
+
+    for (var i = 0; i < years.length; i++) {
+        ages[i] = 2016 - years[i];
+    }
+
+    for (i = 0; i < ages.length; i++) {
+        if (ages[i] >= 18) {
+            console.log('Person ' + (i + 1) + ' is ' + ages[i] + ' years old, and is of full age.');
+            fullAges.push(true);
+        } else {
+            console.log('Person ' + (i + 1) + ' is ' + ages[i] + ' years old, and is NOT of full age.');
+            fullAges.push(false);
+        }
+    }
+
+    return fullAges;
+}
+
+var years = [2001, 1985, 1994, 2014, 1973];
+var full_1 = printFullAge(years);
+var full_2 = printFullAge([2012, 1915, 1999]);
+// console.log(age);
